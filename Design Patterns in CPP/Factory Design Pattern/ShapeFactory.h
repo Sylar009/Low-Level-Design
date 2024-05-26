@@ -2,11 +2,11 @@
 #ifndef SHAPEFACTORY_H
 #define SHAPEFACTORY_H
 
-// #include "Shape.h"
+#include "Shape.h"
 
 class ShapeFactory {
 public:
-    virtual Shape* createShape() = 0;
+    virtual unique_ptr<Shape> createShape() = 0;
     virtual ~ShapeFactory() {};
 };
 

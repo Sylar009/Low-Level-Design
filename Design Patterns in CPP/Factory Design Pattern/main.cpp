@@ -1,24 +1,22 @@
-#include "Circle.h"
-#include "Square.h"
 #include "CircleFactory.h"
 #include "SquareFactory.h"
 
 int main()
 {
-    ShapeFactory* circleFactory = new CircleFactory();
-    ShapeFactory* squareFactory = new SquareFactory();
+    unique_ptr<ShapeFactory> circleFactory (new CircleFactory());
+    unique_ptr<ShapeFactory> squareFactory (new SquareFactory());
 
-    Shape* circle = circleFactory->createShape();
-    Shape* square = squareFactory->createShape();
+    unique_ptr<Shape> circle = circleFactory->createShape();
+    unique_ptr<Shape> square = squareFactory->createShape();
 
     circle->draw(); // Output: Drawing a Circle
     square->draw(); // Output: Drawing a Square
     
   
-    delete circleFactory;
-    delete squareFactory;
-    delete circle;
-    delete square;
+  //   delete circleFactory;
+  //   delete squareFactory;
+  //   delete circle;
+  //   delete square;
 
     
       // Client code based on user-input

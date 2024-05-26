@@ -1,7 +1,8 @@
 #include "SquareFactory.h"
 #include "Square.h"
 
-Shape* SquareFactory::createShape()
+unique_ptr<Shape> SquareFactory::createShape()
 {
-    return new Square();
+    unique_ptr<Shape> square_factory(new Square());
+    return square_factory;
 }

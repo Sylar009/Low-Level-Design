@@ -6,7 +6,7 @@
 
 class SquareFactory : public ShapeFactory {
 public:
-    Shape* createShape() override;
+    unique_ptr<Shape> createShape() override;
 };
 
 #endif // SQUAREFACTORY_H

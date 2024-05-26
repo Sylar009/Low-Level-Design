@@ -1,7 +1,8 @@
 #include "CircleFactory.h"
 #include "Circle.h"
 
-Shape *CircleFactory::createShape()
+unique_ptr<Shape> CircleFactory::createShape()
 {
-    return new Circle();
+    unique_ptr<Shape> circle_factory(new Circle());
+    return circle_factory;
 }
