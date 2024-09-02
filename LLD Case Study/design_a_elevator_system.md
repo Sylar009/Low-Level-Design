@@ -49,7 +49,7 @@
 ### Diagrammatic View (Plain Text)
 
 ```scss
-Copy code
+
 +----------------+           +------------------+
 |    Elevator    |           | ElevatorController|
 +----------------+           +------------------+
@@ -112,7 +112,7 @@ Copy code
 ### Diagrammatic View (Plain Text)
 
 ```scss
-Copy code
+
           +-----------------+
           |   Passenger     |
           +-----------------+
@@ -152,7 +152,7 @@ Copy code
 ### Diagrammatic View (Plain Text)
 
 ```lua
-Copy code
+
 +------------------+
 |   Elevator       |
 +------------------+
@@ -215,7 +215,7 @@ Copy code
 ### Diagrammatic View (Plain Text)
 
 ```sql
-Copy code
+
 +---------------------+
 |  Request Elevator   |
 +---------------------+
