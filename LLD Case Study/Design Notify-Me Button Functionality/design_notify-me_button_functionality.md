@@ -251,5 +251,5 @@ int main() {
 * <strong>Interface Segregation Principle (ISP)</strong>: The system uses small, specific interfaces like `IObserver` and `ISubject`.
 * <strong>Dependency Inversion Principle (DIP)</strong>: High-level modules (like `NotificationService`) do not depend on low-level modules but on abstractions (e.g., `IObserver`, `ISubject`).
 
-#
+---
 This is a comprehensive low-level design for the Notify-Me button feature. The design principles and patterns applied ensure maintainability, scalability, and adherence to OOP best practices.
